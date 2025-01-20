@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = []
+
+[project]
+name = "cycle-time"
+version = "0.0.1"
+dependencies = [
+    "requests",
+    "python-dotenv",
+    "pydantic-settings",
+    "business-python",
+    "numpy",
+    "PrettyTable"
+]
+
+requires-python = ">= 3.8"
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "ruff",
+    "pytest-cov"
+]
